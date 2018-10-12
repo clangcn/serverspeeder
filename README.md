@@ -1,5 +1,5 @@
 # serverspeeder锐速一键破解安装版
-本锐速一键破解安装会在[91yun.org我的博客](http://www.91yun.org/archives/683)持续发布更新，请大家关注
+本锐速一键破解安装会在[91yun.co我的博客](http://www.91yun.co/archives/683)持续发布更新，请大家关注
 
 破解版锐速linux一键自动安装包在本贴持续更新，大家可以加收藏夹，以后有更新都会在这个文章同步。
 
@@ -13,10 +13,10 @@
 锐速不支持Openvz！！！锐速不支持Openvz！！！锐速不支持Openvz！！！
 
 ### 你可能需要：
-* 如果你不知道你的机子到底是不是Openvz，请食用[《教程：一键检测VPS是Openvz还是KVM还是Xen》](http://www.91yun.org/archives/836)
-* 如果你的内核不对，是Centos的话请食用[《教程：CentOS更换内核，提供锐速可用的内核下载》](http://www.91yun.org/archives/795)。debian和ubuntu我不熟，暂时还没一键包，请自行百度google。。
-* 如果你嫌麻烦，只是想找个好用的SS，嫌麻烦又不想花太多钱，你可以和我合租我的自用精选线路。。。[想租SS的进](https://www.vpn100.xyz/)
-* 如果你想知道一些服务器是否适合你，请食用 各种[评测报告](http://www.91yun.org/?s=%E8%AF%84%E6%B5%8B)。我每天都会把我尝试的一些vps评测报告发出来，大家可以收藏好本站，及时关注。
+* 如果你不知道你的机子到底是不是Openvz，请食用[《教程：一键检测VPS是Openvz还是KVM还是Xen》](http://www.91yun.co/archives/836)
+* 如果你的内核不对，是Centos的话请食用[《教程：CentOS更换内核，提供锐速可用的内核下载》](http://www.91yun.co/archives/795)。debian和ubuntu我不熟，暂时还没一键包，请自行百度google。。
+* 如果你嫌麻烦，只是想找个好用的SS，嫌麻烦又不想花太多钱，你可以和我合租我的自用精选线路。。。[想租SS的进](https://www.yecao100.net/)
+* 如果你想知道一些服务器是否适合你，请食用 各种[评测报告](http://www.91yun.co/?s=%E8%AF%84%E6%B5%8B)。我每天都会把我尝试的一些vps评测报告发出来，大家可以收藏好本站，及时关注。
 
 
 # 锐速破解版安装方法：

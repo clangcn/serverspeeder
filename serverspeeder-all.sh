@@ -236,7 +236,7 @@ fi
 echo "======================================"
 echo "开始下载安装包。。。。"
 echo "======================================"
-wget -N -O 91yunserverspeeder.tar.gz  $INSTALLPACK
+wget -N --no-check-certificate -O 91yunserverspeeder.tar.gz  $INSTALLPACK
 tar xfvz 91yunserverspeeder.tar.gz || { echo "下载安装包失败，请检查";exit 1; }
 
 #下载授权文件
