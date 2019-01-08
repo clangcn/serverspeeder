@@ -48,7 +48,7 @@ kernel=`uname -r`
 kernel_result=""
 
 echo -e "\r\n"
-echo "===============system info======================="
+echo "===============System Info======================="
 echo "$release "
 echo "$kernel "
 echo "$bit "
@@ -70,7 +70,7 @@ BINFILE=$1"/"$2"/"$3"/"$4"/"$5"/"$6
 BIN=${BINURL}${BINFILE}
 
 
-echo "installing ServerSpeeder,please wait a moment..."
+echo "installing ServerSpeeder, please wait for a moment..."
 echo -e "\r\n"
 
 
@@ -81,25 +81,25 @@ if [ "$MAC" == "" ]; then
 	MAC=$(eval $MACSTR)
 fi	
 if [ "$MAC" == "" ]; then
-	echo "name of netcard is not eth0,please retry after change the name."
+	echo "The name of network interface is not eth0, please retry after changing the name."
 	exit 1
 fi
 
 
 #如果自动取不到就退出
 if [ "$MAC" = "" ]; then
-	echo "can not get MAC,install stopped."
+	echo "Unable to get MAC address. Installation terminated."
 	exit 1
 fi
 
 	
 #下载安装包
 wget -N --no-check-certificate -O 91yunserverspeeder.tar.gz  $INSTALLPACK  > /dev/null 2>&1
-tar xfvz 91yunserverspeeder.tar.gz  > /dev/null 2>&1 || { echo "can not download install package.install stopped";exit 1; }
+tar xfvz 91yunserverspeeder.tar.gz  > /dev/null 2>&1 || { echo "Unable to download Installation package. Installation terminated.";exit 1; }
 
 #下载授权文件
-wget -N --no-check-certificate -O apx-20341231.lic "$APX?mac=$MAC"  > /dev/null 2>&1 || { echo "can not download lic file,please check : $APX?mac=$MAC";exit 1;}
-mv apx-20341231.lic 91yunserverspeeder/apxfiles/etc/
+wget -N --no-check-certificate -O apx.lic "$APX?mac=$MAC"  > /dev/null 2>&1 || { echo "Unable to download lic file, please check: $APX?mac=$MAC";exit 1;}
+mv apx.lic 91yunserverspeeder/apxfiles/etc/
 
 
 #取得序列号
@@ -108,6 +108,7 @@ wget -N --no-check-certificate -O serverspeedersn.txt "$APX?mac=$MAC&sno"  > /de
 SNO=$(cat serverspeedersn.txt)
 rm -rf serverspeedersn.txt
 sed -i "s/serial=\"sno\"/serial=\"$SNO\"/g" 91yunserverspeeder/apxfiles/etc/config
+sed -i "s/apx-20341231/apx/g" 91yunserverspeeder/apxfiles/etc/config
 rv=$release"_"$kernel_result
 sed -i "s/acce-3.10.61.0-\[Debian_7_3.2.0-4-amd64\]/acce-$serverspeederver-[$rv]/g" 91yunserverspeeder/apxfiles/etc/config
 
@@ -120,5 +121,5 @@ cd 91yunserverspeeder
 bash install.sh  > /dev/null 2>&1
 
 #禁止修改授权文件
-chattr +i /serverspeeder/etc/apx*
+#chattr +i /serverspeeder/etc/apx*
 bash /serverspeeder/bin/serverSpeeder.sh status
