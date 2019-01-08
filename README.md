@@ -15,7 +15,6 @@
 ### 你可能需要：
 * 如果你不知道你的机子到底是不是Openvz，请食用[《教程：一键检测VPS是Openvz还是KVM还是Xen》](http://www.91yun.co/archives/836)
 * 如果你的内核不对，是Centos的话请食用[《教程：CentOS更换内核，提供锐速可用的内核下载》](http://www.91yun.co/archives/795)。debian和ubuntu我不熟，暂时还没一键包，请自行百度google。。
-* 如果你嫌麻烦，只是想找个好用的SS，嫌麻烦又不想花太多钱，你可以和我合租我的自用精选线路。。。[想租SS的进](https://www.yecao100.net/)
 * 如果你想知道一些服务器是否适合你，请食用 各种[评测报告](http://www.91yun.co/?s=%E8%AF%84%E6%B5%8B)。我每天都会把我尝试的一些vps评测报告发出来，大家可以收藏好本站，及时关注。
 
 
@@ -31,4 +30,4 @@
 自动下载授权文件
 自动修改配置文件
 已chattr +i /serverspeeder/etc/apx*禁止修改配置文件，可以不用加hosts了
-目前只支持CentOS，ubuntu和debian。如果有其他系统支持，可以到[91yun.org我的博客](http://www.91yun.org/serverspeeder91yun)手动下载其他系统的安装包
+目前只支持CentOS，ubuntu和debian。如果有其他系统支持，可以到[91yun.org我的博客](http://www.91yun.co/serverspeeder91yun)手动下载其他系统的安装包
